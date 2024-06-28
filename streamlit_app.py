@@ -122,7 +122,7 @@ def main() :
     expander.write('Anda Telah Membuka Detail')
 if __name__ == '__main__' : 
   main()
-
+import time
 def main() : 
     #sidebar 
     with st.form("Data Diri"):
