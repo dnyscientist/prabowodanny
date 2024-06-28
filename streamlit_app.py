@@ -10,9 +10,9 @@ if __name__ == '__main__' :
   main()
   
 def main() : 
-  st.header('This is Header')
-  st.subheader('This is SubHeader')
-  st.markdown('# Rendering Markdown ')
+  st.header('Halaman Streamlit Prabowo Danny W')
+  st.subheader('Web ini memiliki konten terkait Data Scientist')
+  st.markdown('#### Rendering Markdown ')
   st.write('Some Phytagorean Equation : ')
   st.latex('c^2 = a^2+b^2')
 
