@@ -31,7 +31,7 @@ def main():
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
     
     st.write('Menampilkan Dataframe dengan St AgGrid')
-    AgGrid(house)
+    # AgGrid(house)
     
     st.table([x for x in range(1, 5)])
 
@@ -43,9 +43,13 @@ import matplotlib.pyplot as plt
 # Read dataframe from CSV file
 titanic = pd.read_csv('titanic.csv')
 
-def main():
-    st.write('Contoh dataframe')
-    st.dataframe(titanic)
+def main() : 
+    #matplotlib chart 
+    fig,ax = plt.subplots()
+    plt.scatter(titanic['Age'],titanic['Fare'])
+    st.pyplot(fig)
+    plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
+    st.plotly_chart(plotly_fig)
   
 if __name__ == '__main__':
     main()
