@@ -5,3 +5,4 @@ requests
 streamlit-aggrid
 plotly
 matplotlib
+json
