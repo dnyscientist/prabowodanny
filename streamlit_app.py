@@ -44,14 +44,8 @@ import matplotlib.pyplot as plt
 titanic = pd.read_csv('titanic.csv')
 
 def main():
-    # Matplotlib scatter plot
-    fig, ax = plt.subplots()
-    ax.scatter(titanic['Age'], titanic['Fare'])
-    st.pyplot(fig)
-    
-    # Plotly scatter plot
-    plotly_fig = px.scatter(titanic, x='Age', y='Fare')
-    st.plotly_chart(plotly_fig)
+    st.write('Contoh dataframe')
+    st.dataframe(titanic)
   
 if __name__ == '__main__':
     main()
