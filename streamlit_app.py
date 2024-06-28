@@ -25,17 +25,17 @@ from st_aggrid import AgGrid
 # Read the CSV file
 house = pd.read_csv('house_clean.csv')
 
-# # Read JSON file from GitHub repository
-# url = 'timeseries.json'
-# response = requests.get(url)
-# covid = response.json()
+# Read JSON file from GitHub repository
+url = 'timeseries.json'
+response = requests.get(url)
+covid = response.json()
 
 def main():
     st.write('Contoh dataframe')
     st.dataframe(house)
     
-    # st.write('Contoh JSON')
-    # st.json(covid)
+    st.write('Contoh JSON')
+    st.json(covid)
     
    
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
