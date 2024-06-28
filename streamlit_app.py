@@ -3,18 +3,18 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-def main1() : 
+def main() : 
   st.write('Minimal Example')
 
-if __name__ == '__main1__' : 
-  main1()
+if __name__ == '__main__' : 
+  main()
   
-def main2() : 
+def main() : 
   st.header('This is Header')
   st.subheader('This is SubHeader')
   st.markdown('# Rendering Markdown ')
   st.write('Some Phytagorean Equation : ')
   st.latex('c^2 = a^2+b^2')
 
-if __name__ == '__main2__' : 
-  main2()
+if __name__ == '__main__' : 
+  main()
