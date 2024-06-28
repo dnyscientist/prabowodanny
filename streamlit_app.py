@@ -58,12 +58,12 @@ def main() :
     st.pyplot(fig)
     plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
     st.plotly_chart(plotly_fig)
-    st.area_chart(titanic)
-    st.bar_chart(titanic)
-    st.bar_chart(titanic, horizontal=True)
-    st.line_chart(titanic)
-    st.map(titanic)
-    st.scatter_chart(titanic)
+    st.area_chart(titanic['Age'],titanic['Fare'])
+    st.bar_chart(titanic['Age'],titanic['Fare'])
+    st.bar_chart(titanic['Age'],titanic['Fare'], horizontal=True)
+    st.line_chart(titanic['Age'],titanic['Fare'])
+    st.map(titanic['Age'],titanic['Fare'])
+    st.scatter_chart(titanic['Age'],titanic['Fare'])
   
 if __name__ == '__main__':
     main()
