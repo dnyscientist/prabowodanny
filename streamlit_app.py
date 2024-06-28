@@ -58,7 +58,6 @@ def main() :
     st.pyplot(fig)
     plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
     st.plotly_chart(plotly_fig)
-    st.bar_chart(titanic['Age'],titanic['Fare'])
   
 if __name__ == '__main__':
     main()
@@ -169,3 +168,43 @@ def main() :
         st.error(f"Error: {str(e)}")
 if __name__ == '__main__' : 
   main()
+
+import numpy as np
+
+# Generate example DataFrame
+np.random.seed(0)
+df = pd.DataFrame({
+    'x': np.arange(100),
+    'y': np.random.randn(100),
+    'category': np.random.choice(['A', 'B', 'C'], 100)
+})
+
+def main():
+    st.title('Streamlit Chart Examples')
+
+    # Area Chart
+    st.subheader('Area Chart')
+    st.area_chart(df['y'])
+
+    # Bar Chart
+    st.subheader('Bar Chart')
+    st.bar_chart(df.set_index('x'))
+
+    # Horizontal Bar Chart
+    st.subheader('Horizontal Bar Chart')
+    st.bar_chart(df.set_index('x'), use_container_width=True, orientation='h')
+
+    # Line Chart
+    st.subheader('Line Chart')
+    st.line_chart(df.set_index('x'))
+
+    # Map
+    st.subheader('Map')
+    st.map(df)
+
+    # Scatter Chart
+    st.subheader('Scatter Chart')
+    st.scatter_chart(df, x='x', y='y')
+
+if __name__ == '__main__':
+    main()
