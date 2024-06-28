@@ -46,22 +46,6 @@ def main():
 if __name__ == '__main__':
     main()
 
-import plotly.express as px 
-import matplotlib.pyplot as plt
-# Read dataframe from CSV file
-titanic = pd.read_csv('titanic.csv')
-
-def main() : 
-    #matplotlib chart 
-    fig,ax = plt.subplots()
-    plt.scatter(titanic['Age'],titanic['Fare'])
-    st.pyplot(fig)
-    # plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
-    # st.plotly_chart(plotly_fig)
-  
-if __name__ == '__main__':
-    main()
-
 def main() : 
     click_me_btn = st.button('Click Me')
     st.write(click_me_btn) #Return True kalo di Click 
@@ -208,3 +192,19 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# import plotly.express as px 
+# import matplotlib.pyplot as plt
+# # Read dataframe from CSV file
+# titanic = pd.read_csv('titanic.csv')
+
+# def main() : 
+#     #matplotlib chart 
+#     fig,ax = plt.subplots()
+#     plt.scatter(titanic['Age'],titanic['Fare'])
+#     st.pyplot(fig)
+#     # plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
+#     # st.plotly_chart(plotly_fig)
+  
+# if __name__ == '__main__':
+#     main()
