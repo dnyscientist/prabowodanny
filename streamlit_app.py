@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-%%writefile  webapp.py 
 import streamlit as st 
 
 def main() : 
