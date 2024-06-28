@@ -1,1 +1,5 @@
-
+altair
+pandas
+streamlit
+requests
+streamlit-aggrid
