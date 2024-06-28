@@ -56,8 +56,8 @@ def main() :
     fig,ax = plt.subplots()
     plt.scatter(titanic['Age'],titanic['Fare'])
     st.pyplot(fig)
-    plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
-    st.plotly_chart(plotly_fig)
+    # plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
+    # st.plotly_chart(plotly_fig)
   
 if __name__ == '__main__':
     main()
