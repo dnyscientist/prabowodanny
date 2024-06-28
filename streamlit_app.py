@@ -187,12 +187,6 @@ def main():
     st.subheader('Area Chart')
     st.area_chart(df['y'])
 
-    # Bar Chart
-    st.title('Streamlit Bar Chart Example')
-    # Display bar chart
-    st.subheader('Bar Chart Example')
-    st.bar_chart(df.set_index('x'))  # Assuming 'x' is a numeric column
-
     # Horizontal Bar Chart
     st.subheader('Horizontal Bar Chart')
     st.bar_chart(df.set_index('x'), use_container_width=True, orientation='h')
