@@ -21,7 +21,7 @@ if __name__ == '__main__' :
 
 house = pd.read_csv('house_clean.csv')
 #read json file dari data covid 
-covid = requests.post('https://pomber.github.io/covid19/timeseries.json',json={
+covid = requests.post('timeseries.json',json={
   "month_limit": "2020-01-01",
   "window_size": 12
 }).json()
