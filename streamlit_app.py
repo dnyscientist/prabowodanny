@@ -187,10 +187,6 @@ def main():
     st.subheader('Area Chart')
     st.area_chart(df['y'])
 
-    # Horizontal Bar Chart
-    st.subheader('Horizontal Bar Chart')
-    st.bar_chart(df.set_index('x'), use_container_width=True, orientation='h')
-
     # Line Chart
     st.subheader('Line Chart')
     st.line_chart(df.set_index('x'))
