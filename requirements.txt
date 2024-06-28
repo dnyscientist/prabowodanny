@@ -3,3 +3,5 @@ pandas
 streamlit
 requests
 streamlit-aggrid
+plotly.express
+matplotlib.pyplot
