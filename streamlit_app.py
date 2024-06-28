@@ -72,5 +72,10 @@ def main() :
     #Input (Typing)
     num_input = st.number_input('Input Berapapun')
     st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
+
+    #Input (Typing)
+    alas_input = st.number_input('Input Alas')
+    tinggi_input = st.number_input('Input Tinggi')
+    st.write('Luas dari segitiga adalah {}'.format(1/2*alas_input*tinggi_input))
 if __name__ == '__main__' : 
   main()
