@@ -187,10 +187,6 @@ def main():
     st.subheader('Area Chart')
     st.area_chart(df['y'])
 
-    # Line Chart
-    st.subheader('Line Chart')
-    st.line_chart(df.set_index('x'))
-
     # Map
     st.subheader('Map')
     st.map(df)
