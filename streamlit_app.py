@@ -187,14 +187,6 @@ def main():
     st.subheader('Area Chart')
     st.area_chart(df['y'])
 
-    # Map
-    st.subheader('Map')
-    st.map(df)
-
-    # Scatter Chart
-    st.subheader('Scatter Chart')
-    st.scatter_chart(df, x='x', y='y')
-
 if __name__ == '__main__':
     main()
 
