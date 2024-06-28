@@ -157,14 +157,16 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 # Read dataframe from CSV file
 titanic = pd.read_csv('titanic.csv')
-
-def main() : 
-    #matplotlib chart 
-    fig,ax = plt.subplots()
-    plt.scatter(titanic['Age'],titanic['Fare'])
+def main():
+    # Matplotlib scatter plot
+    fig, ax = plt.subplots()
+    ax.scatter(titanic['Age'], titanic['Fare'])
     st.pyplot(fig)
-    plotly_fig = px.scatter(titanic['Age'],titanic['Fare'])
+    
+    # Plotly scatter plot
+    plotly_fig = px.scatter(titanic, x='Age', y='Fare')
     st.plotly_chart(plotly_fig)
+  
 if __name__ == '__main__':
     main()
 
