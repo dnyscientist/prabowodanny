@@ -21,6 +21,7 @@ if __name__ == '__main__' :
 
 import requests
 from st_aggrid import AgGrid
+import json
 
 # Read the CSV file
 house = pd.read_csv('house_clean.csv')
