@@ -159,6 +159,12 @@ def main() :
     st.warning("Warning message")
     st.info("Info message")
     st.success("Success message")
-    st.exception(e)
+    # Example of potential exception handling
+    try:
+        # Simulate some operation that might raise an exception
+        result = 1 / 0  # This will raise a ZeroDivisionError
+        st.write("Result:", result)
+    except Exception as e:
+        st.error(f"Error: {str(e)}")
 if __name__ == '__main__' : 
   main()
