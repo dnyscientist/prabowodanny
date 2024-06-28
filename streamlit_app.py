@@ -28,6 +28,13 @@ house = pd.read_csv('house_clean.csv')
 def main():
     st.write('Contoh dataframe')
     st.dataframe(house)
+   # Load JSON data from file
+    with open('timeseries.json', 'r') as f:
+        json_data = json.load(f)
+    # Display JSON data using Streamlit
+    st.subheader('JSON Data:')
+    st.json(json_data)
+  
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
     
     st.write('Menampilkan Dataframe dengan St AgGrid')
@@ -92,7 +99,7 @@ def main() :
        st.header("A cat")
        st.image("https://static.streamlit.io/examples/cat.jpg")
     #atau dengan assignment 
-    image_col1 = col1.image("https://static.streamlit.io/examples/cat.jpg")
+    # image_col1 = col1.image("https://static.streamlit.io/examples/cat.jpg")
 
     with col2:
        st.header("A dog")
